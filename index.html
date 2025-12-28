@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor Minecraft - All The Mods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>All The Mods 10</h1>
+            <p class="description">(Sí, necesitas tener minecraft para jugar)</p>
+        </header>
+
+        <main>
+            <div class="card status-card">
+                <h2>Estado del Servidor</h2>
+                <div id="status-container" class="loading">
+                    <span class="status-indicator"></span>
+                    <span id="server-status-text">Comprobando...</span>
+                </div>
+                <p id="player-count" class="player-count">Jugadores: -/-</p>
+                <p id="version-info" class="version-info">Versión: -</p>
+            </div>
+
+            <div class="card ip-card">
+                <h2>Únete</h2>
+                <div class="ip-box">
+                    <span id="server-ip">tnshyqui.ddns.net</span>
+                    <button id="copy-btn" title="Copiar IP">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                        </svg>
+                    </button>
+                </div>
+                <!-- Toast notification -->
+                <div id="toast" class="toast">¡IP Copiada!</div>
+            </div>
+
+            <div class="actions">
+                <a href="https://mega.nz/folder/example" target="_blank" class="btn mega-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="mega-icon">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Descargar Mods (MEGA)
+                </a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; tn-shyqui 2025</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
