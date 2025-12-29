@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 statusText.textContent = 'Online';
                 statusIndicator.classList.add('status-online');
                 playerCount.textContent = `Jugadores: ${data.players.online} / ${data.players.max}`;
-                versionInfo.textContent = `Versi�n: ${data.version.name_clean || data.version.name}`;
+                versionInfo.textContent = `Versión: ${data.version.name_clean || data.version.name}`;
             } else {
                 statusText.textContent = 'Offline';
                 statusIndicator.classList.add('status-offline');

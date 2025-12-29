@@ -96,8 +96,8 @@ h2 {
 }
 
 .status-online {
-    background-color: var(--accent-color);
-    box-shadow: 0 0 10px var(--accent-color);
+    background-color: var(--accent-hover);
+    box-shadow: 0 0 10px var(--accent-hover);
 }
 
 .status-offline {
